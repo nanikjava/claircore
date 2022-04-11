@@ -28,7 +28,7 @@ jobs:
           echo "The latest released golang version is ${GO_VERSION}"
           echo "GO_VERSION=${GO_VERSION}" >> $GITHUB_ENV
       - name: Archive logfile
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           path: ${{ matrix.go }}.log
           name: ${{ matrix.go }}.log
